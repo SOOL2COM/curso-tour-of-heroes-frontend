@@ -1,4 +1,30 @@
-<h1>{{title}}</h1>
-<h2>{{subtitle}}</h2>
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Tour of Heroes</span>
+  <span fxFlex></span>
+  <button matTooltip="Home" routerLink="" mat-icon-button aria-label="Example icon-button with heart icon">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button matTooltip="My Heroes" routerLink="/heroes" mat-icon-button aria-label="Example icon-button with heart icon">
+    <mat-icon>sports_martial_arts</mat-icon>
+  </button>
+  <button matTooltip="My Heroes" routerLink="/dashboard" mat-icon-button aria-label="Example icon-button with heart icon">
+    <mat-icon>dashboard</mat-icon>
+  </button>
+  <button  mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>help</mat-icon>
+  </button>
+</mat-toolbar>
 
-<app-heroes></app-heroes>
+
+
+    <div class="content" fxLayoutGap="12px">
+      <router-outlet></router-outlet>
+      <app-messages></app-messages>
+      </div>
+
+
+
+
